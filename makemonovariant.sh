@@ -1,51 +1,44 @@
 #!/bin/bash
-
-ORIGNAME="URW Nimbus Roman No9 L"
+PSNAME="URWCenturySchoolbookLMono"
+FAMILYNAME="URW Century Schoolbook L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$NAME Mono was converted from $NAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
-NAME="URWNimbusRomNo9LMonoRegular"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Regular"
+python monospaci.py/monospaci.py -psname "$PSNAME" -fullname "$HUMANNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt  CenturySchL-Roma.sfd
 
-python monospaci.py/monospaci.py -psname "$NAME" -fullname "$FULLNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt NimbusRomanNo9L-Regu.sfd
-
-NAME="URWCenturySchoolbookLMonoRoman"
-ORIGNAME="URW Century Schoolbook L"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Roman"
+PSNAME="URWNimbusRomNo9LMonoRegular"
+FAMILYNAME="URW Nimbus Roman No9 L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$HUMANNAME Mono was converted from $HUMANNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
-python monospaci.py/monospaci.py -psname $NAME -fullname "$FULLNAME" -copyright "$COPYRIGHT" -familyname "$FAMILYNAME" -nameslist monospaci.py/NamesList.txt CenturySchL-Roma.sfd
+python monospaci.py/monospaci.py -psname "$NAME" -fullname "$HUMANNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt NimbusRomanNo9L-Regu.sfd
 
 NAME="URWBookmanLMonoLight"
-ORIGNAME="URW Bookman L"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Light"
+FAMILYNAME="URW Bookman L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$HUMANNAME Mono was converted from $HUMANNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
-python monospaci.py/monospaci.py -psname $NAME -fullname "$FULLNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWBookmanL-Ligh.sfd
+python monospaci.py/monospaci.py -psname $NAME -fullname "$HUMANNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWBookmanL-Ligh.sfd
 
 NAME="URWPalladioLMonoRoman"
-ORIGNAME="URW Palladio L"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Roman"
+FAMILYNAME="URW Palladio L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$HUMANNAME Mono was converted from $HUMANNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
-python monospaci.py/monospaci.py -psname $NAME -fullname "$FULLNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWPalladioL-Roma.sfd
+python monospaci.py/monospaci.py -psname $NAME -fullname "$HUMANNAME" -familyname "$FAMILYNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWPalladioL-Roma.sfd
 
 NAME="URWNimbusSansLMonoRegular"
-ORIGNAME="URW Nimbus Sans L"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Regular"
+FAMILYNAME="URW Nimbus Sans L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$HUMANNAME Mono was converted from $HUMANNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
 
-python monospaci.py/monospaci.py -psname "$NAME" -fullname "$NAME" -copyright "$COPYRIGHT" -fullname "$FULLNAME" -familyname "$FAMILYNAME" -nameslist monospaci.py/NamesList.txt NimbusSansL-Regu.sfd
+python monospaci.py/monospaci.py -psname "$NAME" -fullname "$NAME" -copyright "$COPYRIGHT" -fullname "$HUMANNAME" -familyname "$FAMILYNAME" -nameslist monospaci.py/NamesList.txt NimbusSansL-Regu.sfd
 
 #URWGothicL-BookObli.sfd
 #URWGothicL-Book.sfd
@@ -53,13 +46,12 @@ python monospaci.py/monospaci.py -psname "$NAME" -fullname "$NAME" -copyright "$
 #URWGothicL-Demi.sfd
 
 NAME="URWGothicLMonoBook"
-ORIGNAME="URW Gothic L"
-FAMILYNAME="$ORIGNAME Mono"
-FULLNAME="$FAMILYNAME Book"
+FAMILYNAME="URW Gothic L"
+HUMANNAME="$FAMILYNAME Mono"
 COPYRIGHT="
-$ORIGNAME Mono was converted from $ORIGNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
+$HUMANNAME Mono was converted from $HUMANNAME by the monospaci.py script by Thomas Eriksson (https://github.com/arnognulf/monospaci.py)
 " 
-python monospaci.py/monospaci.py -psname $NAME -familyname "$FAMILYNAME" -fullname "$FULLNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWGothicL-Book.sfd
+python monospaci.py/monospaci.py -psname $NAME -familyname "$FAMILYNAME" -fullname "$HUMANNAME" -copyright "$COPYRIGHT" -nameslist monospaci.py/NamesList.txt URWGothicL-Book.sfd
 
 
 rm *Output.ttf
